@@ -13,6 +13,7 @@ public class GerenciadorTarefas {
 
         tarefas.add("Limpar a casa");
         tarefas.add("Lavar a roupa");
+        tarefas.add("Limpar Carro")
 
         while (true) {
             System.out.println("\n--- Menu Principal ---");
@@ -95,4 +96,4 @@ public class GerenciadorTarefas {
         scanner.close();
     }
 }
-}
+
