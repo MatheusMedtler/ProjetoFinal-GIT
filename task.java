@@ -1,7 +1,7 @@
-import java.util.ArrayList;
+/*import java.util.ArrayList;
 import java.util.Scanner;
 
-public class GerenciadorTarefas {
+/*public class GerenciadorTarefas {
 
     public static void main(String[] args) {
         System.out.println("Bem-vindo ao sistema de gerenciamento de tarefas LEGADO!");
@@ -35,4 +35,4 @@ public class GerenciadorTarefas {
         }
         scanner.close();
     }
-}
+}*/
