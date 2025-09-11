@@ -6,7 +6,7 @@ public class GerenciadorTarefas {
     public static void main(String[] args) {
         System.out.println("Bem-vindo ao sistema de gerenciamento de tarefas LEGADO!");
         System.out.println("Este código não usa classes e métodos para simular um projeto antigo.");
-        
+
         ArrayList<String> tarefas = new ArrayList<>();
         Scanner scanner = new Scanner(System.in);
         String entrada = "";
@@ -17,7 +17,8 @@ public class GerenciadorTarefas {
             System.out.println("\n--- Menu Principal ---");
             System.out.println("1. Listar Tarefas");
             System.out.println("2. Detalhes das tarefas");
-            System.out.println("3. Sair");
+            System.out.println("3. Criar Tarefa");
+            System.out.println("4. Sair");
             System.out.print("Escolha uma opção: ");
             entrada = scanner.nextLine();
 
@@ -51,6 +52,11 @@ public class GerenciadorTarefas {
                     }
                 }
             } else if (entrada.equals("3")) {
+                System.out.println("Digite uma tarefa:");
+                String addTarefa = scanner.nextLine();
+                System.out.println("Tarefa cadastrada com success:");
+                tarefas.add(addTarefa);
+            } else if (entrada.equals("4")) {
                 System.out.println("Saindo do programa. Até mais!");
                 break;
             } else {
