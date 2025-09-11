@@ -10,12 +10,9 @@ public class GerenciadorTarefas {
         ArrayList<String> tarefas = new ArrayList<>();
         Scanner scanner = new Scanner(System.in);
         String entrada = "";
-        tarefas.add("Estudar para a prova");
-        tarefas.add("Lavar a louça");
-        tarefas.add("Fazer compras");
+
         tarefas.add("Limpar a casa");
         tarefas.add("Lavar a roupa");
-
 
         while (true) {
             System.out.println("\n--- Menu Principal ---");
@@ -36,8 +33,8 @@ public class GerenciadorTarefas {
                         System.out.println((i + 1) + ". " + tarefas.get(i));
                     }
                 }
-
-            } else if (entrada.equals("2")) {
+            }
+            else if (entrada.equals("2")) {
                 if (tarefas.isEmpty()) {
                     System.out.println("Não há tarefas para excluir.");
                 } else {
@@ -51,8 +48,16 @@ public class GerenciadorTarefas {
                         int num = Integer.parseInt(scanner.nextLine());
                         if (num >= 1 && num <= tarefas.size()) {
                             String removida = tarefas.remove(num - 1);
-                            System.out.println("Item \"" + removida + "\" excluido com sucesso.");
-            } else if (entrada.equals("3")) {
+                            System.out.println("Item \"" + removida + "\" excluído com sucesso.");
+                        } else {
+                            System.out.println("Número inválido.");
+                        }
+                    } catch (NumberFormatException e) {
+                        System.out.println("Entrada inválida. Use um número.");
+                    }
+                }
+            }
+            else if (entrada.equals("3")) {
                 if (tarefas.isEmpty()) {
                     System.out.println("Nenhuma tarefa cadastrada para mostrar detalhes.");
                 } else {
@@ -69,26 +74,24 @@ public class GerenciadorTarefas {
                             System.out.println("Número inválido.");
                         }
                     } catch (NumberFormatException e) {
-                        System.out.println("Entrada invalida. Use um número.");
+                        System.out.println("Entrada inválida. Use um número.");
                     }
                 }
-
-            } 
-                }
-            } else if (entrada.equals("4")) {
+            }
+            else if (entrada.equals("4")) {
                 System.out.println("Digite uma tarefa:");
                 String addTarefa = scanner.nextLine();
-                System.out.println("Tarefa cadastrada com success:");
+                System.out.println("Tarefa cadastrada com sucesso:");
                 tarefas.add(addTarefa);
-            } else if (entrada.equals("5")) {
+            }
+            else if (entrada.equals("5")) {
                 System.out.println("Saindo do programa. Até mais!");
                 break;
-            } else {
+            }
+            else {
                 System.out.println("Opção inválida. Tente novamente.");
             }
         }
-
         scanner.close();
     }
-}
 }
