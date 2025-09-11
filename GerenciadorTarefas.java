@@ -74,7 +74,7 @@ public class GerenciadorTarefas {
                 }
 
             } 
-                }
+        }
             } else if (entrada.equals("4")) {
                 System.out.println("Digite uma tarefa:");
                 String addTarefa = scanner.nextLine();
@@ -89,6 +89,6 @@ public class GerenciadorTarefas {
         }
 
         scanner.close();
-    }
+        }
 }
 }
