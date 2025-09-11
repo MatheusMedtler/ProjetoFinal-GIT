@@ -10,7 +10,6 @@ public class GerenciadorTarefas {
         ArrayList<String> tarefas = new ArrayList<>();
         Scanner scanner = new Scanner(System.in);
         String entrada = "";
-
         tarefas.add("Limpar a casa");
         tarefas.add("Lavar a roupa");
 
