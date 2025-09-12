@@ -78,15 +78,8 @@ public class GerenciadorTarefas {
                         System.out.println("Entrada inválida. Use um número.");
                     }
                 }
-<<<<<<< HEAD
-
-            } 
-        }
-            } else if (entrada.equals("4")) {
-=======
             }
             else if (entrada.equals("4")) {
->>>>>>> 17f60a595d2307a51e7f03c7715831766453707b
                 System.out.println("Digite uma tarefa:");
                 String addTarefa = scanner.nextLine();
                 System.out.println("Tarefa cadastrada com sucesso:");
@@ -101,6 +94,5 @@ public class GerenciadorTarefas {
             }
         }
         scanner.close();
-        }
+    }
 }
-
